@@ -27,3 +27,12 @@ I initially set out to use testng because of the ability to run paralle tests an
 However, my 5+ years of experience is in mobile testing using junit, and because testng uses different syntax and works/runs differently, I was unable to showcase my abilities 
 with the timeframe provided, but have learned a lot about testng and will continue to develop in it.
 I used a Maven structure, ran in Junit using Selenium WebDriver with Cucumber software tool and Gherkin language parser to execute the BDD tests.
+
+In order to test thoroughly across browsers, each step is assigned an interface and a common Page Object executes the code - to prohibit any issues with differing identifiers across browsers, each Page Object is extended into a browser-specific Page Object. This is useful for mobile applications where idenitifiers rarely are consistent across platforms.
+
+**Screenshots of Framework Structure**
+
+![runner-steps-tests_folder strategy](https://github.com/MariaC95/technicaltestautomation/assets/44735610/e94d4a87-73de-42ad-8891-ada5a2b09d73)
+![pages_folder strategy](https://github.com/MariaC95/technicaltestautomation/assets/44735610/5af7f24c-a924-4e0d-a593-ffeedf9a7ae5)
+![config-contracts-pages_folder stratefy](https://github.com/MariaC95/technicaltestautomation/assets/44735610/94d56f46-8e7a-44f6-b56f-dd0f5ba90193)
+
