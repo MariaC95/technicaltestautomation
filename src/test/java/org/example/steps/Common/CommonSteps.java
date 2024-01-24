@@ -6,9 +6,7 @@ import org.apache.commons.lang3.NotImplementedException;
 import org.example.contracts.cart.Cart;
 import org.example.contracts.common.Common;
 import org.example.contracts.home.Home;
-import org.example.contracts.signupLogin.Signup;
 import org.example.contracts.signupLogin.SignupLogin;
-import org.example.steps.SignupLogin.RegisterUserSteps;
 import org.example.utils.Defaults;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -58,5 +56,7 @@ public class CommonSteps implements En {
                     throw new NotImplementedException("No implementation was found for " + navButtons);
             }
         });
+
+        And("^the user clicks on the view cart modal button$", common::clickViewCartModalButton);
     }
 }

@@ -12,13 +12,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
 
 
-public class RegisterUserSteps implements En {
+public class RegisterSteps implements En {
 
     private final boolean expectedResult = true;
     private boolean actualResult;
     private String reasonForFailure;
     @Inject
-    public RegisterUserSteps(
+    public RegisterSteps(
             SignupLogin signupLogin,
             Signup signup,
             SignupForm signupForm,

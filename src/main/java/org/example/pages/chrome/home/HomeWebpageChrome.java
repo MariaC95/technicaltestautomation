@@ -16,6 +16,7 @@ public class HomeWebpageChrome extends HomeWebpage {
         this.homeScreenIdentifierLocator = By.xpath("//div[@id='slider-carousel']/a/i");
         this.addToCartLocator = By.xpath("(//a[contains(text(),'Add to cart')])");
         this.dismissModalLocator = By.cssSelector(".close-modal");
+        this.viewProductButtonLocator = By.linkText("View Product");
     }
 
     @Override

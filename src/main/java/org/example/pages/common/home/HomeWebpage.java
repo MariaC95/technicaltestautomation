@@ -13,6 +13,7 @@ public class HomeWebpage implements Home {
     protected By homeScreenIdentifierLocator;
     protected By addToCartLocator;
     protected By dismissModalLocator;
+    protected By viewProductButtonLocator;
 
     public HomeWebpage(WebDriver driver) {
         this.driver = driver;
@@ -25,6 +26,10 @@ public class HomeWebpage implements Home {
 
     @Override
     public void clickAddToCart() {
+    }
 
+    @Override
+    public void clickViewProductButton() {
+        driver.findElement(viewProductButtonLocator).click();
     }
 }

@@ -12,6 +12,7 @@ public class CommonWebpageChrome extends CommonWebpage {
         this.continueButtonLocator = By.linkText("Continue");
         this.deleteAccountButtonLocator = By.linkText("Delete Account");
         this.deleteAccountTextLocator = By.cssSelector(".title");
+        this.viewCartModalButtonLocator = By.cssSelector(".btn-success");
     }
 
     @Override
