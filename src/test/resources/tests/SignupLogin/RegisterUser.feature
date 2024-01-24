@@ -8,7 +8,7 @@ Feature: Signup/Login
     Given the homepage is visible
     When the user clicks on the signupLogin button
     Then the signup page is displayed
-    When the user enters their name and email address
+    When the user enters their name and email address to signup
     And clicks the signup button
     Then the enter account information page is displayed
     When the user fills out their account information on the signup form

@@ -3,6 +3,7 @@ package org.example.steps.Common;
 import com.google.inject.Inject;
 import io.cucumber.java8.En;
 import org.apache.commons.lang3.NotImplementedException;
+import org.example.contracts.cart.Cart;
 import org.example.contracts.common.Common;
 import org.example.contracts.home.Home;
 import org.example.contracts.signupLogin.Signup;
@@ -23,7 +24,8 @@ public class CommonSteps implements En {
             Home home,
             Common common,
             Defaults defaults,
-            SignupLogin signupLogin) {
+            SignupLogin signupLogin,
+            Cart cart) {
 
         When("^the user clicks on the continue button$", common::clickContinueButton);
 
@@ -46,9 +48,11 @@ public class CommonSteps implements En {
                 case "signupLogin" :
                     signupLogin.navigateToSignupLogin();
                     break;
+                case "cart" :
+                    cart.navigateToCart();
+                    break;
                 case "home" :
                 case "products" :
-                case "cart" :
                 case "contactUs":
                 default:
                     throw new NotImplementedException("No implementation was found for " + navButtons);

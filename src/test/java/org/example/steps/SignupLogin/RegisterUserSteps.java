@@ -31,7 +31,7 @@ public class RegisterUserSteps implements En {
             assertThat(reasonForFailure, actualResult, equalTo(expectedResult));
         });
 
-        When("^the user enters their name and email address$", () -> {
+        When("^the user enters their name and email address to signup$", () -> {
             signup.enterSignUpDetails(defaults.getGeneratedName(), defaults.getGeneratedEmail());
         });
 
