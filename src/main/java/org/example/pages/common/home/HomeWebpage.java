@@ -26,6 +26,12 @@ public class HomeWebpage implements Home {
 
     @Override
     public void clickAddToCart() {
+        List<WebElement> list = driver.findElements(addToCartLocator);
+        int listSize = list.size();
+        String randomItem = RandomStringUtils.randomNumeric(1,listSize);
+        addToCartLocator = By.xpath(addToCartLocator + "["+ randomItem +"]");
+        driver.findElement(addToCartLocator);
+        driver.findElement(dismissModalLocator).click();
     }
 
     @Override

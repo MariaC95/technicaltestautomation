@@ -9,7 +9,6 @@ public class FirefoxWebDriver {
 
     public WebDriver buildFirefoxDriver(){
         try {
-            System.setProperty("webdriver.firefox.driver", "C:\\Users\\mariaconnolly95\\Downloads\\geckodriver-v0.34.0-win-aarch64");
             return firefoxDriver = new FirefoxDriver();
         } catch (Exception error) {
             throw new RuntimeException("Failed to build Firefox Driver", error);

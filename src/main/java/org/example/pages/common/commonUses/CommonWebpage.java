@@ -22,8 +22,8 @@ public class CommonWebpage implements Common {
 
     @Override
     public boolean isUsernameDisplayed(String name) {
-        //this is called in Chrome specific page object
-        return false;
+        By userNameLocator = By.xpath("//b[contains('" + name + "')]");
+        return driver.findElement(userNameLocator).isDisplayed();
     }
 
     @Override

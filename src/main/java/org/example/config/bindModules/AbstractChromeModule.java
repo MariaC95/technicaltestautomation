@@ -24,7 +24,6 @@ public class AbstractChromeModule extends AbstractModule {
 
     @Override
     protected void configure(){
-        //pages
         bind(Home.class).to(HomeWebpageChrome.class);
         bind(SignupLogin.class).to(SignupLoginWebpageChrome.class);
         bind(Signup.class).to(SignupWebpageChrome.class);
