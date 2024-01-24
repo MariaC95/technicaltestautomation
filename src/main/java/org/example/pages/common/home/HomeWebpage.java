@@ -1,4 +1,4 @@
-package org.example.pages.common;
+package org.example.pages.common.home;
 
 import org.example.contracts.home.Home;
 import org.openqa.selenium.By;

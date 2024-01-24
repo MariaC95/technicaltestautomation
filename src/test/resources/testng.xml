@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Test AutomationExercise Website Parallel Suite" verbose="2" parallel="classes" thread-count="1">
-    <test name="Launch Browser">
-        <classes>
-            <class name="org.example.runner.TestRunner"></class>
-        </classes>
-    </test>
-</suite>

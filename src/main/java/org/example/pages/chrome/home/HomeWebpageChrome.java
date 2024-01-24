@@ -1,7 +1,7 @@
-package org.example.pages.chrome;
+package org.example.pages.chrome.home;
 
 import com.google.inject.Inject;
-import org.example.pages.common.HomeWebpage;
+import org.example.pages.common.home.HomeWebpage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
