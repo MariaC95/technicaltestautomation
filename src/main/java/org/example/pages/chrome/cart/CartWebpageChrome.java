@@ -17,5 +17,7 @@ public class CartWebpageChrome extends CartWebpage {
         this.descriptionTextBoxLocator = By.name("message");
         this.placeOrderButtonLocator = By.linkText("Place Order");
         this.successMessageTextLocator = By.xpath("//p[contains(.,'Congratulations! Your order has been confirmed!')]");
+        this.xButtonLocator = By.cssSelector("#empty_cart > .text-center");
+        this.emptyCartTextLocator = By.id("empty_cart");
     }
 }

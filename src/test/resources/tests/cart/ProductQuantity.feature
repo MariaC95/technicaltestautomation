@@ -1,3 +1,4 @@
+@test
 Feature: Add to Cart
   As a user
   I want to increase the quantity of the product in my cart
