@@ -17,4 +17,8 @@ public interface Cart {
     void clickPlaceOrderButton();
 
     boolean isSuccessMessageDisplayed();
+
+    void clickToRemove();
+
+    boolean isProductRemoved();
 }

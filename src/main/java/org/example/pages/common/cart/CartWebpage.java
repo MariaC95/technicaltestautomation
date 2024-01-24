@@ -14,6 +14,8 @@ public class CartWebpage implements Cart {
     protected By descriptionTextBoxLocator;
     protected By placeOrderButtonLocator;
     protected By successMessageTextLocator;
+    protected By xButtonLocator;
+    protected By emptyCartTextLocator;
 
     public CartWebpage(WebDriver driver) {
         this.driver = driver;
@@ -57,5 +59,15 @@ public class CartWebpage implements Cart {
     @Override
     public boolean isSuccessMessageDisplayed() {
         return driver.findElement(successMessageTextLocator).isDisplayed();
+    }
+
+    @Override
+    public void clickToRemove() {
+        driver.findElement(xButtonLocator).click();
+    }
+
+    @Override
+    public boolean isProductRemoved() {
+        return driver.findElement(emptyCartTextLocator).isDisplayed();
     }
 }

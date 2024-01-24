@@ -48,5 +48,13 @@ public class CartSteps implements En {
             reasonForFailure = "'Your order has been placed successfully!' was not displayed";
             assertThat(reasonForFailure, actualResult, equalTo(expectedResult));
         });
+
+        Then("^the user clicks on the x to remove from cart$", cart::clickToRemove);
+
+        And("^the product is removed from the cart$", () -> {
+            actualResult = cart.isProductRemoved();
+            reasonForFailure = "the product was not removed from the cart";
+            assertThat(reasonForFailure, actualResult, equalTo(expectedResult));
+        });
     }
 }
