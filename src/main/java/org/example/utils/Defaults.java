@@ -2,12 +2,15 @@ package org.example.utils;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public enum Defaults {
 
     DEFAULT_URL(),
     GENERATED_NAME(),
     GENERATED_EMAIL(),
-    GENERATED_PASSWORD();
+    GENERATED_PASSWORD(),
+    GENERATED_CARD_NUMBER();
 
     private final String url;
     private final String generatedName;
@@ -16,7 +19,7 @@ public enum Defaults {
 
     Defaults() {
         this.url = "https://automationexercise.com/";
-        this.generatedName = RandomStringUtils.randomAlphabetic(8);
+        this.generatedName = RandomStringUtils.randomAlphabetic(6);
         this.generatedEmail = RandomStringUtils.randomAlphabetic(8) + "@hotmail.com";
         this.generatedPassword = RandomStringUtils.randomAlphanumeric(8);
     }
@@ -36,5 +39,6 @@ public enum Defaults {
     public String getGeneratedPassword(){
         return generatedPassword;
     }
+
 
 }

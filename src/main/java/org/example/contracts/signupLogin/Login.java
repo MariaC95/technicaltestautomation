@@ -2,6 +2,6 @@ package org.example.contracts.signupLogin;
 
 public interface Login {
 
-    boolean isVisible();
+    void enterLoginDetails(String email, String password);
 
 }

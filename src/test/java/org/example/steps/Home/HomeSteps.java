@@ -18,5 +18,7 @@ public class HomeSteps implements En {
             reasonForFailure = "home page was not displayed";
             assertThat(reasonForFailure, actualResult, equalTo(expectedResult));
         });
+
+        When("^the user adds product to cart$", home::clickAddToCart);
     }
 }

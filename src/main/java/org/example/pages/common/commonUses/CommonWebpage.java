@@ -16,21 +16,22 @@ public class CommonWebpage implements Common {
 
     @Override
     public void clickContinueButton() {
-
+        driver.findElement(continueButtonLocator).click();
     }
 
     @Override
     public boolean isUsernameDisplayed(String name) {
+        //this is called in Chrome specific page object
         return false;
     }
 
     @Override
     public void clickDeleteAccountButton() {
-
+        driver.findElement(deleteAccountButtonLocator).click();
     }
 
     @Override
     public boolean isDeleteAccountConfirmationDisplayed() {
-        return false;
+        return driver.findElement(deleteAccountTextLocator).isDisplayed();
     }
 }
