@@ -5,6 +5,7 @@ import org.example.contracts.cart.Cart;
 import org.example.contracts.cart.Payment;
 import org.example.contracts.common.Common;
 import org.example.contracts.home.Home;
+import org.example.contracts.products.Products;
 import org.example.contracts.signupLogin.Login;
 import org.example.contracts.signupLogin.Signup;
 import org.example.contracts.signupLogin.SignupForm;
@@ -13,6 +14,7 @@ import org.example.pages.chrome.cart.CartWebpageChrome;
 import org.example.pages.chrome.cart.PaymentWebpageChrome;
 import org.example.pages.chrome.commonUses.CommonWebpageChrome;
 import org.example.pages.chrome.home.HomeWebpageChrome;
+import org.example.pages.chrome.products.ProductsWebpageChrome;
 import org.example.pages.chrome.signupLogin.LoginWebpageChrome;
 import org.example.pages.chrome.signupLogin.SignupFormWebpageChrome;
 import org.example.pages.chrome.signupLogin.SignupLoginWebpageChrome;
@@ -31,5 +33,6 @@ public class AbstractChromeModule extends AbstractModule {
         bind(Cart.class).to(CartWebpageChrome.class);
         bind(Payment.class).to(PaymentWebpageChrome.class);
         bind(Login.class).to(LoginWebpageChrome.class);
+        bind(Products.class).to(ProductsWebpageChrome.class);
     }
 }

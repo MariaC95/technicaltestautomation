@@ -9,4 +9,6 @@ public interface Common {
     void clickDeleteAccountButton();
 
     boolean isDeleteAccountConfirmationDisplayed();
+
+    void clickViewCartModalButton();
 }

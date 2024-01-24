@@ -20,5 +20,7 @@ public class HomeSteps implements En {
         });
 
         When("^the user adds product to cart$", home::clickAddToCart);
+
+        When("^the user clicks on view product button on homepage$", home::clickViewProductButton);
     }
 }

@@ -5,4 +5,6 @@ public interface Home {
 
     void clickAddToCart();
 
+    void clickViewProductButton();
+
 }

@@ -10,6 +10,7 @@ public class CommonWebpage implements Common {
     protected By continueButtonLocator;
     protected By deleteAccountButtonLocator;
     protected By deleteAccountTextLocator;
+    protected By viewCartModalButtonLocator;
     public CommonWebpage(WebDriver driver) {
         this.driver = driver;
     }
@@ -33,5 +34,10 @@ public class CommonWebpage implements Common {
     @Override
     public boolean isDeleteAccountConfirmationDisplayed() {
         return driver.findElement(deleteAccountTextLocator).isDisplayed();
+    }
+
+    @Override
+    public void clickViewCartModalButton() {
+        driver.findElement(viewCartModalButtonLocator).click();
     }
 }
